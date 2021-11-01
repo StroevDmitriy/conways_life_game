@@ -1,0 +1,71 @@
+main{
+  padding: 0px 15px;
+}
+
+h1{
+  margin-bottom: 20px;
+}
+
+h2{
+  margin-bottom: 60px;
+  font-size: 20px;
+}
+
+.game-container{
+  display: flex;
+  flex-flow: wrap;
+}
+
+#app{
+  display: inline-block;
+  margin: 40px;
+  border-collapse: collapse;
+}
+
+.cell{
+  height: 10px;
+  width: 10px;
+  border: 1px solid black;
+  padding: 0px;
+}
+
+.cell.alive{
+  background-color: #000;
+}
+
+.interface-col{
+  display: flex;
+  flex-flow: column;
+  width: 300px;
+  align-items: flex-start;
+}
+
+.option-item{
+  margin-bottom: 40px;
+}
+
+.field-size-control-block{
+  display: flex;
+  flex-flow: column;
+}
+
+.field-size-control-block label{
+  margin-bottom: 10px;
+}
+
+.field-size-control-block label span{
+  display: block;
+  width: 50px;
+}
+
+/* .field-size-control-block .set-option-item{
+  margin-bottom: 20px;
+} */
+
+.init-field-btn{
+  margin-top: 10px;
+}
+
+h3{
+  margin: 0 0 10px;
+}

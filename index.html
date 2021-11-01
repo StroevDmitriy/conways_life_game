@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Conways Life Game</title>
+
+  <style>
+    
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Conway's Life game</h1>
+    <h2>Click a cell to set it alive</h2>
+
+    <div class="game-container">
+      <div class="interface-col">
+        <div class="iter-speed-ctrl option-item">
+          <h3>Set iterations speed</h3>
+          <input type="number" class="iter-speed" placeholder="ms">
+          <button type="button" class="set-speed-btn">Set</button>
+          <div class="cur-speed">Cur speed: <span>500</span></div>
+        </div>
+        <div class="field-size-control-block option-item">
+          <div class="set-rows-block set-option-item">
+            <label><span>Rows:</span> <input type="number" id="" class="rows-count" placeholder="50"></label>
+            <button type="button" class="set-rows-btn">Set</button>
+            <span class="rows-amount">50</span>
+          </div>
+          <div class="set-cols-block set-option-item">
+            <label><span>Cols:</span> <input type="number" id="" class="cols-count" placeholder="50"></label>
+            <button type="button" class="set-cols-btn">Set</button>
+            <span class="cols-amount">50</span>
+          </div>
+          <button type="button" class="init-field-btn">Initiate field</button>
+        </div>
+        <button type="button" class="run-iteration-btn option-item">Run iteration</button>
+        <button type="button" class="run-life-btn option-item">Run life</button>
+        <button type="button" class="break-life-btn option-item" disabled>Break life</button>
+      </div>
+  
+      <table id="app"></table>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
