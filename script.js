@@ -73,7 +73,7 @@
     let nextState = createNextStateModel(prevState);
 
     updateState(nextState);
-  };
+  }
 
   function createNextStateModel(modelPrev) {
     let modelNext = new Array(rows); 
